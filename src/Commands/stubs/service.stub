@@ -1,0 +1,17 @@
+<?php
+
+namespace {{namespace}};
+
+use App\Models\{{modelName}};
+
+class {{serviceName}}
+{
+    protected ${{modelName}};
+
+    public function __construct({{modelName}} ${{modelName}})
+    {
+        $this->{{modelName}} = ${{modelName}};
+    }
+
+    // Implement your service methods here
+}
