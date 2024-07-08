@@ -6,13 +6,17 @@ tharindu/service-maker is a Composer package for Laravel that provides an Artisa
 
 You can install the package via Composer:
 
-```composer require tharindu/service-maker```
+```bash
+composer require tharindu/service-maker
+```
 
 ## Usage
 
 To generate a service file, use the Artisan command:
 
-```php artisan make:service```
+```bash
+php artisan make:service
+```
 
 Follow the prompts to specify whether to create a folder for the service, the folder name, model name related to the service, and the service name itself. The command will create the necessary service file in your Laravel application's `app/Services` directory.
 
@@ -20,7 +24,8 @@ Follow the prompts to specify whether to create a folder for the service, the fo
 
 Here's an example of how the generated service file looks:
 
-```<?php
+```bash
+<?php
 
 namespace App\Services\Product;
 
@@ -60,7 +65,8 @@ class ProductService
     {
         return $this->product->all();
     }
-}```
+}
+```
 
 Replace `ProductService`, `Product`, and methods as per your application's requirements.
 
