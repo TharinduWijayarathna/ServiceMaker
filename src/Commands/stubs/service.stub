@@ -6,12 +6,35 @@ use App\Models\{{modelName}};
 
 class {{serviceName}}
 {
-    protected ${{modelName}};
+    protected ${{modelVariable}};
 
-    public function __construct({{modelName}} ${{modelName}})
+    public function __construct({{modelName}} ${{modelVariable}})
     {
-        $this->{{modelName}} = ${{modelName}};
+        $this->{{modelVariable}} = ${{modelVariable}};
     }
 
-    // Implement your service methods here
+    public function all()
+    {
+        return $this->{{modelVariable}}->all();
+    }
+
+    public function get($id)
+    {
+        return $this->{{modelVariable}}->find($id);
+    }
+
+    public function store($data)
+    {
+        return $this->{{modelVariable}}->create($data);
+    }
+
+    public function update($data, $id)
+    {
+        return $this->{{modelVariable}}->where('id', $id)->update($data);
+    }
+
+    public function destroy($id)
+    {
+        return $this->{{modelVariable}}->destroy($id);
+    }
 }
