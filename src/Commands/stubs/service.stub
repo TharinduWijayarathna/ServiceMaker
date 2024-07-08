@@ -6,35 +6,35 @@ use App\Models\{{modelName}};
 
 class {{serviceName}}
 {
-    protected ${{modelVariable}};
+    protected ${{modelName}};
 
-    public function __construct({{modelName}} ${{modelVariable}})
+    public function __construct({{modelName}} ${{modelName}})
     {
-        $this->{{modelVariable}} = ${{modelVariable}};
+        $this->{{modelName}} = ${{modelName}};
     }
 
     public function all()
     {
-        return $this->{{modelVariable}}->all();
+        return $this->{{modelName}}->all();
     }
 
     public function get($id)
     {
-        return $this->{{modelVariable}}->find($id);
+        return $this->{{modelName}}->find($id);
     }
 
     public function store($data)
     {
-        return $this->{{modelVariable}}->create($data);
+        return $this->{{modelName}}->create($data);
     }
 
     public function update($data, $id)
     {
-        return $this->{{modelVariable}}->where('id', $id)->update($data);
+        return $this->{{modelName}}->where('id', $id)->update($data);
     }
 
     public function destroy($id)
     {
-        return $this->{{modelVariable}}->destroy($id);
+        return $this->{{modelName}}->destroy($id);
     }
 }
