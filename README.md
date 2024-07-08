@@ -1,4 +1,4 @@
-### Service Maker
+# Service Maker
 
 tharindu/service-maker is a Composer package for Laravel that provides an Artisan command to generate service files. This package simplifies the process of creating service classes tailored to your Laravel application's needs.
 
